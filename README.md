@@ -29,11 +29,11 @@ This approach makes the design:
 
 ## Hardware Architecture Design
 
-![image](RISC-V Hardware Architecture/risc v.png)
+![image](RISC-V%20Hardware%20Architecture/risc%20v.png)
 
 ## Encoding of the Bit-manipulation Instructions
 
-![image](RISC-V Hardware Architecture/risc v.png)
+![image](RISC-V%20Hardware%20Architecture/risc%20v.png)
 
 ## Implemented Instructions
 
@@ -88,6 +88,11 @@ Simulation
 -> Add testbenches from tb/
 
 -> Run simulation → view waveforms
+
+## Simulation Waveforms
+![image](RISC-V%20Hardware%20Architecture/Picture1.png)
+![image](RISC-V%20Hardware%20Architecture/Picture1.png)
+![image](RISC-V%20Hardware%20Architecture/Picture1.png)
 
 ## Contact
 
