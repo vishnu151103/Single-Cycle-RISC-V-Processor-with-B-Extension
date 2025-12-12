@@ -1,0 +1,15 @@
+module control_unit (
+input [6:0]opcode,
+input [2:0]funct3,
+input [6:0]funct7,
+input [4:0]rs2,
+input branch,
+output pc_src, mem_w, alu_src, reg_w,j_src,
+output [4:0]alu_control,
+output [1:0]imm_src,result_src);
+wire jump;
+wire [1:0] alu_op;
+main_decoder md (opcode,reg_w,mem_w,alu_src,jump,j_src,alu_op,imm_src,result_src);
+alu_decoder ad (funct3,funct7,alu_op,rs2,alu_control);
+assign pc_src = jump||branch;
+endmodule
