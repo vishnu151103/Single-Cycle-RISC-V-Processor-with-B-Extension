@@ -33,7 +33,7 @@ This approach makes the design:
 
 ## Encoding of the Bit-manipulation Instructions
 
-![image](RISC-V%20Hardware%20Architecture/risc%20v.png)
+![image](RISC-V%20Hardware%20Architecture/Screenshot%202025-12-12%20110735.png)
 
 ## Implemented Instructions
 
@@ -90,6 +90,9 @@ Simulation
 -> Run simulation → view waveforms
 
 ## Simulation Waveforms
+
+The instruction and its corresponding result were shown in same color for better identification
+
 ![image](RISC-V%20Hardware%20Architecture/Picture1.png)
 ![image](RISC-V%20Hardware%20Architecture/Picture1.png)
 ![image](RISC-V%20Hardware%20Architecture/Picture1.png)
