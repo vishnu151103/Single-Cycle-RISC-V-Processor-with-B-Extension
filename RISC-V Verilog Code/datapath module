@@ -1,1 +1,26 @@
+module data_path(
+input clk, rst);
 
+wire pc_src,mem_w,alu_src,reg_w,branch,jump,j_src;
+wire [31:0]pc,pc_next,inst,pc_4,pc_target;
+wire [4:0]alu_control;
+wire [1:0]imm_src,result_src;
+wire [31:0]write_data,rd;
+wire [31:0]rs1,rs2_data,rs2,alu_result;
+wire [31:0]imm_ext,rs_imm;
+
+program_counter prog_c(clk,rst,pc_next,pc);
+inst_mem in(pc,inst);
+control_unit cu(inst[6:0],inst[14:12],inst[31:25],inst[24:20],branch,pc_src,mem_w,alu_src,reg_w,j_src,alu_control,imm_src,result_src);
+reg_file rg(clk,reg_w,inst[19:15],inst[24:20],inst[11:7],write_data,rs1,rs2_data);
+alu a1(rs1,rs2,alu_control,alu_result,branch);
+data_memory dm(clk,mem_w,inst[14:12],alu_result,rs2_data,rd);
+extend e(inst[31:0],imm_src,imm_ext);
+mux4 m1(alu_result,rd,pc_4,imm_ext,result_src,write_data);
+mux m2(rs2_data,imm_ext,alu_src,rs2);
+mux m3(pc_4,pc_target,pc_src,pc_next);
+mux m4(imm_ext,alu_result,j_src,rs_imm);
+adder ad1(pc,rs_imm,pc_target);
+adder ad2(pc,32'd4,pc_4);
+
+endmodule
