@@ -3,7 +3,7 @@
 A clean, modular, and fully functional 32-bit single-cycle RISC-V processor designed in Verilog and implemented using Xilinx Vivado.
 This processor supports RV32I (36 instructions) and includes 17 Bit-Manipulation instructions from Zbb and Zbkb, making it suitable for both standard RISC-V learning and cryptographic applications.
 
-✨ Overview
+## Overview
 
 This processor implements:
 
@@ -16,7 +16,7 @@ This processor implements:
 
 -> Zbkb (Bitwise Cryptography Primitives)
 
-🔐 B-Extension Integration
+## B-Extension Integration
 
 The 17 bit-manipulation instructions are implemented directly inside the ALU, without any extra modules.
 This approach makes the design:
@@ -27,7 +27,15 @@ This approach makes the design:
 
 -> You can use the processor happily as a standard RV32I design, or enable the extended ALU for crypto applications.
 
-🧩 Implemented Instructions
+## Hardware Architecture Design
+
+![image](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/assets/152515939/a96949c0-6e89-426c-97c5-8d158f3afae8)
+
+## Encoding of the Bit-manipulation Instructions
+
+![image](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/assets/152515939/e5042813-b772-4bf1-a8a8-44d33539c6b8)
+
+## Implemented Instructions
 
 ✔️ RV32I (36 Instructions)
 
@@ -59,7 +67,7 @@ Tools Used
 
 -> Simulation & Implementation: Xilinx Vivado
 
-📷 Attached Resources
+## Attached Resources
 
 This repo includes:
 
@@ -69,7 +77,7 @@ This repo includes:
 
 -> Verification screenshots
 
-▶️ How to Run
+ ## How to Run
 
 Simulation
 
@@ -81,7 +89,7 @@ Simulation
 
 -> Run simulation → view waveforms
 
-📬 Contact
+## Contact
 
 If you have:
 
