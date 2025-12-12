@@ -29,11 +29,11 @@ This approach makes the design:
 
 ## Hardware Architecture Design
 
-![image](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/assets/152515939/a96949c0-6e89-426c-97c5-8d158f3afae8)
+![image](RISC-V Hardware Architecture/risc v.png)
 
 ## Encoding of the Bit-manipulation Instructions
 
-![image](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/assets/152515939/e5042813-b772-4bf1-a8a8-44d33539c6b8)
+![image](RISC-V Hardware Architecture/risc v.png)
 
 ## Implemented Instructions
 
