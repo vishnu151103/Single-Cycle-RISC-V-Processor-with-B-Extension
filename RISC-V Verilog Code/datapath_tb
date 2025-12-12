@@ -1,0 +1,19 @@
+module data_path_tb;
+
+    reg clk,rst;
+    data_path dut (clk,rst);
+    always #5 clk = ~clk;
+    initial begin
+        clk=0;
+        rst=1;
+        #10 rst=0;
+        #250;
+        $display(" x1 = %0h\n x2 = %0h\n x3 = %0h\n x4 = %0h",
+        dut.rg.register[1],
+        dut.rg.register[2],
+        dut.rg.register[3],
+        dut.rg.register[4]);
+        $finish;
+    end
+    
+endmodule
