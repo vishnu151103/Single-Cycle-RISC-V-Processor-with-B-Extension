@@ -1,0 +1,12 @@
+module inst_mem(
+input [31:0]pc,
+output [31:0]inst);
+
+reg [31:0] memory [127:0];
+
+initial begin
+    $readmemh("program.mem",memory);
+end
+
+assign inst = memory[pc[31:2]];
+endmodule
