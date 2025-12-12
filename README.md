@@ -98,15 +98,5 @@ The instruction and its corresponding result were shown in same color for better
 
 ## Contact
 
-If you have:
-
-Questions
-
-Doubts
-
-Suggestions
-
-Corrections
-
-Feel free to reach out!
-Contributions and issues are always welcome.
+If you have any questions, doubts, suggestions, corrections
+Feel free to reach me at vishnu.nov03@gmail.com
