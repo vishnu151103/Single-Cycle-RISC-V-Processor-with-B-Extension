@@ -58,6 +58,7 @@ HDL: Verilog
 Simulation & Implementation: Xilinx Vivado
 
 📷 Attached Resources
+
 This repo includes:
 
 Simulation waveforms of all 17 bit-manipulation instructions
