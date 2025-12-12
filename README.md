@@ -93,9 +93,8 @@ Simulation
 
 The instruction and its corresponding result were shown in same color for better identification
 
-![image](RISC-V%20Hardware%20Architecture/Picture1.png)
-![image](RISC-V%20Hardware%20Architecture/Picture1.png)
-![image](RISC-V%20Hardware%20Architecture/Picture1.png)
+![image](RISC-V%20Hardware%20Architecture/wavedrom%20(2).png)
+![image](RISC-V%20Hardware%20Architecture/wavedrom%20(3).png)
 
 ## Contact
 
